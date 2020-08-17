@@ -138,7 +138,7 @@ int main( void )
     // ========================================
     //            RENDER LOOP
     // ========================================
-    glPointSize(5.0f);
+    glPointSize(5.0f); // comment this line to reset points to normal size
     do{
         float currentFrame = glfwGetTime();
         deltaTime = currentFrame - lastFrame;
@@ -296,6 +296,6 @@ unsigned int loadTextureFromFile(const char *path)
         std::cout << "Texture failed to load at path: " << path << std::endl;
         stbi_image_free(data);
     }
-    
+
     return textureID;
 }
