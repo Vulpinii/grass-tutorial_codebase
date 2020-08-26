@@ -118,8 +118,8 @@ int main( void )
     //            CREATE POSITIONS
     // ========================================
     std::vector<glm::vec3> positions;
-    for(float x = -10.0f; x < 10.0f; x+=0.5f)
-        for(float z = -10.0f; z < 10.0f; z+=0.5f)
+    for(float x = -10.0f; x < 10.0f; x+=0.2f)
+        for(float z = -10.0f; z < 10.0f; z+=0.2f)
         {
             positions.push_back(glm::vec3(x, 0, z));
         }
